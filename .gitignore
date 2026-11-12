@@ -1,0 +1,35 @@
+# ---- Node.js ----
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+*.log
+*.pid
+*.seed
+*.pid.lock
+coverage/
+.nyc_output/
+dist/
+*.tsbuildinfo
+
+# ---- Cloudflare Wrangler ----
+# Локално състояние (SQLite, Miniflare, R2 blobs)
+.wrangler/
+.wrangler-*-state/
+
+# Локални тайни и променливи на средата
+# НЕ ги качвайте в Git – те съдържат чувствителни данни
+.dev.vars
+.dev.vars.*
+.env
+.env.*
+!.env.example
+!.dev.vars.example
+
+# ---- OS / Editor ----
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
