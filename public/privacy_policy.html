@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Chat-Pat</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            background: #1a1a1a;
+            color: #e0e0e0;
+            line-height: 1.7;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1120px;
+            margin: 40px auto;
+            background: #2a2a2a;
+            padding: 50px 60px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+            border: 1px solid #3a3a3a;
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            color: #ffffff;
+            margin-bottom: 8px;
+            letter-spacing: -0.5px;
+        }
+
+        .last-updated {
+            color: #888;
+            font-size: 0.9rem;
+            border-bottom: 1px solid #3a3a3a;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            font-size: 1.4rem;
+            color: #ffffff;
+            margin-top: 30px;
+            margin-bottom: 12px;
+            border-left: 4px solid #4a90e2;
+            padding-left: 15px;
+        }
+
+        p {
+            margin-bottom: 16px;
+            color: #d0d0d0;
+        }
+
+        ul,
+        ol {
+            margin: 12px 0 20px 25px;
+            color: #d0d0d0;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        strong {
+            color: #ffffff;
+        }
+
+        .highlight-box {
+            background: #1f1f1f;
+            border-left: 4px solid #f5a623;
+            padding: 18px 22px;
+            margin: 25px 0;
+            border-radius: 4px;
+            font-size: 0.95rem;
+        }
+
+        .highlight-box strong {
+            color: #f5a623;
+        }
+
+        a {
+            color: #4a90e2;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-top: 35px;
+            padding: 12px 28px;
+            background: #4a90e2;
+            color: #fff;
+            border-radius: 6px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: background 0.2s;
+        }
+
+        .back-link:hover {
+            background: #357abd;
+            text-decoration: none;
+        }
+
+        /* Footer matching your style */
+        .footer-meta {
+            text-align: right;
+            padding: 20px 0 0 0;
+            margin-top: 40px;
+            border-top: 1px solid #3a3a3a;
+            color: #fff;
+            font-size: 13px;
+        }
+
+        .footer-meta a {
+            color: #4a90e2;
+            text-decoration: none;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 25px 20px;
+                margin: 10px auto;
+            }
+
+            h1 {
+                font-size: 1.6rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Privacy Policy</h1>
+        <div class="last-updated">Last Updated: 24/08/2026</div>
+
+        <h2>1. Introduction</h2>
+        <p>Welcome to <strong>Chat-Pat</strong>. Your privacy is important to us. This Privacy Policy explains how we
+            collect, use, disclose, and safeguard your information when you use our chat application.</p>
+        <p><strong>Please read this privacy policy carefully.</strong> By using Chat-Pat, you agree to the collection
+            and use of information in accordance with this policy. If you do not agree with the terms of this privacy
+            policy, please do not use the Application.</p>
+
+        <h2>2. Information We Collect</h2>
+        <p>Because <strong>Chat-Pat</strong> does not require registration, email addresses, or phone numbers, we
+            collect a very limited amount of data.</p>
+
+        <h3 style="color: #fff; margin-top: 16px; font-size: 1.1rem;">a. Information You Provide Directly</h3>
+        <ul>
+            <li><strong>Username:</strong> You are required to input a username to participate in chats. This username
+                is displayed publicly within the chat rooms.</li>
+            <li><strong>Chat Content:</strong> Any messages, images, or files you send via the WebSocket connection are
+                temporarily processed and stored to facilitate the conversation.</li>
+        </ul>
+
+        <h3 style="color: #fff; margin-top: 16px; font-size: 1.1rem;">b. Automatically Collected Information</h3>
+        <p>When you use the Application, certain information is automatically collected by our servers (Durable Objects)
+            and infrastructure:</p>
+        <ul>
+            <li><strong>IP Address:</strong> Used to route traffic and for basic security/rate-limiting.</li>
+            <li><strong>Browser/Device Metadata:</strong> Information such as your operating system, browser type, and
+                screen resolution may be logged for debugging and performance optimization.</li>
+            <li><strong>Connection Timestamps:</strong> The time you connect and disconnect from the WebSocket.</li>
+        </ul>
+
+        <h2>3. How We Use Your Information</h2>
+        <p>We use the information we collect to:</p>
+        <ul>
+            <li><strong>Provide the Service:</strong> To route your messages to the correct chat room using WebSocket
+                and Durable Object technology.</li>
+            <li><strong>Maintain Security:</strong> To monitor for spam, abuse, or malicious activity (e.g.,
+                rate-limiting to prevent server overload).</li>
+            <li><strong>Improve Performance:</strong> To analyze usage patterns to ensure the "Durable Objects"
+                infrastructure remains stable and fast.</li>
+            <li><strong>Compliance:</strong> To comply with applicable laws and regulations.</li>
+        </ul>
+
+        <h2>4. Data Storage and Retention (Durable Objects)</h2>
+        <p><strong>Chat-Pat</strong> utilizes Cloudflare Durable Objects for real-time state management.</p>
+        <ul>
+            <li><strong>Storage:</strong> Chat messages may be stored ephemerally within Durable Objects to synchronize
+                conversations across users. This storage is transient and exists primarily to facilitate the "live"
+                nature of the chat.</li>
+            <li><strong>Retention Policy:</strong> We do not permanently archive chat history. Messages are retained for
+                a short period to allow for connection drops and reconnects.</li>
+            <li><strong>Deletion:</strong> Once a conversation is inactive or the Durable Object is evicted, the chat
+                data is automatically and permanently deleted.</li>
+        </ul>
+
+        <h2>5. Sharing of Information</h2>
+        <p>We do not sell, trade, or rent your personal information to third parties. However, we may share data in the
+            following circumstances:</p>
+        <ul>
+            <li><strong>Service Providers:</strong> We use Cloudflare to host our Durable Objects and WebSocket
+                infrastructure. Your data is processed via their network.</li>
+            <li><strong>Legal Requirements:</strong> We may disclose your information if required to do so by law or in
+                response to valid requests by public authorities.</li>
+        </ul>
+
+        <h2>6. Security</h2>
+        <p>We are committed to protecting your data. We implement appropriate technical and organizational measures,
+            including:</p>
+        <ul>
+            <li><strong>Encryption:</strong> WebSocket connections are secured via TLS/SSL.</li>
+            <li><strong>Isolation:</strong> Cloudflare Durable Objects provide isolated compute environments to prevent
+                cross-tenant data breaches.</li>
+        </ul>
+        <div class="highlight-box">
+            <strong>⚠️ Public Username Warning:</strong> Because you are not required to log in, your username is
+            <strong>public</strong>. We strongly advise against using your real name, email address, or any personally
+            identifiable information as your username.
+        </div>
+
+        <h2>7. Your Data Rights (GDPR &amp; CCPA)</h2>
+        <p>Depending on your location, you may have the following rights regarding your data:</p>
+        <ul>
+            <li><strong>Right to Access:</strong> You can request a copy of the data we hold about you.</li>
+            <li><strong>Right to Rectification:</strong> You can correct inaccurate data.</li>
+            <li><strong>Right to Erasure ("Right to be Forgotten"):</strong> You can request we delete your data.</li>
+            <li><strong>Right to Object:</strong> You can object to our processing of your data.</li>
+        </ul>
+        <p><strong>How to Exercise These Rights:</strong> Because there is no login system, we cannot verify your
+            identity via an email. To exercise your rights, please contact us directly (see Section 10). We will require
+            proof of connection (such as the IP address used during the session) to identify your data.</p>
+
+        <h2>8. Children's Privacy</h2>
+        <p>Our Service does not address anyone under the age of 13 (or 16 in the EU). We do not knowingly collect
+            personally identifiable information from children. If you are a parent or guardian and you are aware that
+            your child has provided us with personal information, please contact us.</p>
+
+        <h2>9. Changes to This Privacy Policy</h2>
+        <p>We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new
+            Privacy Policy on this page. You are advised to review this Privacy Policy periodically for any changes.</p>
+
+        <h2>10. Contact Us</h2>
+        <p>If you have any questions about this Privacy Policy, please contact us at:</p>
+        <p
+            style="background: #1f1f1f; padding: 12px 18px; border-radius: 6px; display: inline-block; font-family: monospace; color: #4a90e2;">
+            📧 pgdimitrov@yahoo.com
+        </p>
+        <p style="margin-top: 6px; font-size: 0.9rem; color: #888;">Subject: Privacy Inquiry for Chat-Pat</p>
+
+        <!-- Back link that matches your footer style -->
+        <div class="footer-meta">
+            <p id="footer-year"></p>
+            <a href="/" style="color: #4a90e2; text-decoration: none;">← Back to Chat</a>
+        </div>
+    </div>
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const date_updated = document.getElementById("footer-year");
+            if (date_updated) { // Safety check to prevent errors if the ID is missing
+                const currentYear = new Date().getFullYear();
+                date_updated.textContent = `Chat-Pat © ${currentYear}`;
+            }
+        });
+    </script>
+
+</body>
+
+</html>
