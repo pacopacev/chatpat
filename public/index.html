@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="manifest" href="manifest.json" />
     <title>ChatPat Chat</title>
     <style>
         * {
@@ -196,7 +197,18 @@
         </footer>
     </div>
 
+
     <script>
+
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('sw.js')
+                    .then(() => console.log('SW registered'))
+                    .catch(err => console.log('SW failed', err));
+            });
+        }
+
+
         document.addEventListener("DOMContentLoaded", () => {
             const date_updated = document.getElementById("footer-year");
             if (date_updated) { // Safety check to prevent errors if the ID is missing
@@ -204,9 +216,9 @@
                 date_updated.textContent = `Chat-Pat Chat © ${currentYear}`;
             }
         });
-    </script>
 
-    <script>
+
+
         let ws = null;
         let userName = null;
         let currentRoom = null;
